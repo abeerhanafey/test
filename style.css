@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fasthand', cursive;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: #d6aefcc8;
+}
+
+  .header .container .rwo input {
+        display: none;
+    }
+
+.header .logo {
+    color: #fff;
+    font-size: 75px;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+
+.header .container .rwo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: blueviolet;
+    align-items: center;
+    margin: auto;
+}
+
+.header .container .rwo .nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.header .container .rwo .nav ul li {
+    list-style-type: none;
+    font-size: 25px;
+    line-height: 100px;
+}
+
+.header .container .rwo .nav ul li a {
+    color: #f2eafacc;
+    margin-left: 70px;
+    text-decoration: none;
+}
+.header .container .rwo .nav ul li a:hover {
+    color: #fcfcfc;
+   
+}
+
+.header .container .rwo label {
+    width: 40px;
+    height: 40px;
+    background-color: #d6aefc;
+    margin: auto;
+    padding: 6px 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: none;
+}
+.header .container .rwo label span {
+    width: 30px;
+    height: 3px;
+    background-color: #2d0157;
+    display: block;
+    margin: 5px 0;
+}
+
+@media (max-width:700px) { 
+    .header .container .rwo .logo {
+        width: 80%;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .header .container .rwo label {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .header .container .rwo .nav {
+        border-top: 1px solid #cca1f4d5;
+        width: 100%;
+        margin: 20px 10px 0;
+    }
+    .header .container .rwo .nav ul {
+        display: none;
+        padding: 10px;
+    }
+   
+     .header .container .rwo .nav ul li{
+        margin-top: -15px;
+        margin-bottom: -35px;
+    }
+    
+    .header .container .rwo input {
+        display: none;
+    }
+
+
+    .header .container .rwo input:checked ~ .nav ul {
+        display: block;
+    }
+}
+
+@media (max-width:500px) {
+    .header .container .rwo label {
+        margin-top: -60px;
+        margin-right: 20px;
+    }
+}
